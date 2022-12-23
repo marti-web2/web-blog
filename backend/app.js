@@ -9,6 +9,7 @@ const app = express()
 const PORT = 5000
 const mongoPassword = process.env.MONGO_PASSWORD
 
+app.use(express.json())
 app.use("/api/user", router)  // http://localhost:5000/api/user/login
 
 mongoose.connect(
