@@ -23,6 +23,7 @@ export const signup = async (req, res, next) => {
         name,
         email,
         password: hashedPassword,
+        blogs: [],
       })
       await user.save()
       return res.status(201).json({ message: "User created!" })
