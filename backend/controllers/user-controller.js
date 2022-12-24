@@ -73,7 +73,7 @@ export const login = async (req, res, next) => {
     return res.status(401).json({ message: "Invalid credentials!" });
   }
 
-  return res.status(200).json({ message: "Logged in was successful!" });
+  return res.status(200).json({ message: "Login was successful!" });
 };
 
 
