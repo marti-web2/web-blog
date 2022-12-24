@@ -25,3 +25,18 @@ export const addBlog = async (req, res, next) => {
     return res.status(409).json({ message: "Blog not saved!" })
   }
 }
+
+export const updateBlog = async (req, res, next) => {
+  const { title, description } = req.body
+  const blogId = req.params.id
+  let blog
+  try {
+    blog = await Blog.findByIdAndUpdate(blogId, {
+      title,
+      description
+    })
+    return res.status(201).json({ blog })
+  } catch (error) {
+    return res.status(409).json({ message: "Blog not updated!" })
+  }
+}
