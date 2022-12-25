@@ -1,18 +1,10 @@
-import React, { useState } from "react";
+import React, { useState } from "react"
+import Header from "./components/Header"
 
 const App = () => {
-  const [counter, setCounter] = useState(0);
-
-  const increment = () => {
-    setCounter(counter + 1);
-  };
   return (
-    <div>
-      ReactJS from Scratch! Also, hello world!
-      <button onClick={increment}>Increment</button>
-      {counter}
-    </div>
-  );
-};
+    <Header />
+  )
+}
 
-export default App;
+export default App

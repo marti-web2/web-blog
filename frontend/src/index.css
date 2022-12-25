@@ -1,0 +1,5 @@
+*, 
+body::before,
+body::after {
+  margin: 0;
+}
