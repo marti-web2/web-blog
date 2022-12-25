@@ -8,6 +8,9 @@ node_modules/
 
 # Build output
 client/build/
+/dist
+/build
+frontend/public/main.js
 
 # Editor directories and files
 .vscode/
