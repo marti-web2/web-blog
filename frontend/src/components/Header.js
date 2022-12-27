@@ -1,6 +1,7 @@
 import React from 'react'
 import { AppBar, Toolbar, Typography, Box, Button, Link } from '@mui/material'
 import { useSelector } from 'react-redux'
+import { authActions } from '../store'
 
 const buttonStyle = {
   margin: 1,
@@ -8,6 +9,7 @@ const buttonStyle = {
 }
 
 const Header = () => {
+  const dispatch = useDispatch()
   const isLoggedIn = useSelector(state => state.isLoggedIn)
   const [value, setValue] = React.useState(0)
 
@@ -27,7 +29,11 @@ const Header = () => {
         <Box display='flex' marginLeft='auto'>
           <Button LinkComponent={Link} to="/auth" variant='contained' sx={ buttonStyle } color="warning">Login</Button>
           <Button variant='contained' sx={ buttonStyle } color="warning">Signup</Button>
-          { isLoggedIn && <Button variant='contained' sx={ buttonStyle } color="warning">Logout</Button> }
+          { isLoggedIn && <Button 
+          onClick={() => dispatch(authActions.logout)} 
+          LinkComponent={Link} to={"/auth"}variant='contained' 
+          sx={ buttonStyle } 
+          color="warning">Logout</Button> }
         </Box>
       </Toolbar>
     </AppBar>
