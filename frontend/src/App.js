@@ -1,5 +1,5 @@
 import Header from "./components/Header";
-import Blogs from "./components/Blogs";
+import Blogs from "./components/Blog";
 import UserBlogs from "./components/UserBlogs";
 import BlogDetail from "./components/BlogDetail";
 import AddBlog from "./components/AddBlog";
