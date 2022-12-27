@@ -1,25 +1,25 @@
-import { Box, Button, TextField, Typography } from "@mui/material";
-import React, { useState } from "react";
-import axios from "axios";
-import { useDispatch } from "react-redux";
-import { authActions } from "../store";
-import { useNavigate } from "react-router-dom";
+import { Box, Button, TextField, Typography } from "@mui/material"
+import React, { useState } from "react"
+import axios from "axios"
+import { useDispatch } from "react-redux"
+import { authActions } from "../store"
+import { useNavigate } from "react-router-dom"
 
 const Auth = () => {
-  const naviagte = useNavigate();
-  const dispath = useDispatch();
+  const naviagte = useNavigate()
+  const dispath = useDispatch()
   const [inputs, setInputs] = useState({
     name: "",
     email: "",
     password: "",
-  });
-  const [isSignup, setIsSignup] = useState(false);
+  })
+  const [isSignup, setIsSignup] = useState(false)
   const handleChange = (e) => {
     setInputs((prevState) => ({
       ...prevState,
       [e.target.name]: e.target.value,
-    }));
-  };
+    }))
+  }
   const sendRequest = async (type = "login") => {
     const res = await axios
       .post(`http://localhost:5000/api/user/${type}`, {
@@ -27,28 +27,28 @@ const Auth = () => {
         email: inputs.email,
         password: inputs.password,
       })
-      .catch((err) => console.log(err));
+      .catch((err) => console.log(err))
 
-    const data = await res.data;
-    console.log(data);
-    return data;
-  };
+    const data = await res.data
+    console.log(data)
+    return data
+  }
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(inputs);
+    e.preventDefault()
+    console.log(inputs)
     if (isSignup) {
       sendRequest("signup")
         .then((data) => localStorage.setItem("userId", data.user._id))
         .then(() => dispath(authActions.login()))
-        .then(() => naviagte("/blogs"));
+        .then(() => naviagte("/blogs"))
     } else {
       sendRequest()
         .then((data) => localStorage.setItem("userId", data.user._id))
         .then(() => dispath(authActions.login()))
-        .then(() => naviagte("/blogs"));
+        .then(() => naviagte("/blogs"))
     }
-  };
+  }
   return (
     <div>
       <form onSubmit={handleSubmit}>
@@ -109,7 +109,7 @@ const Auth = () => {
         </Box>
       </form>
     </div>
-  );
-};
+  )
+}
 
-export default Auth;
+export default Auth
