@@ -1,8 +1,8 @@
 import express from "express"
 import mongoose from "mongoose"
 import dotenv from "dotenv"
-import blogRouter from "./routes/blog-routes"
-import userRouter from "./routes/user-routes"
+import blogRouter from "./routes/blog-routes.js"
+import userRouter from "./routes/user-routes.js"
 import cors from "cors"
 
 dotenv.config()
