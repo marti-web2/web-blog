@@ -15,8 +15,6 @@
   <li>Install the dependencies: <code>npm install</code></li>
   <li>Start the development server: <code>npm run dev</code></li>
 </ol>
-<h2>Configuration</h2>
-<p>The default configuration for this project can be found in the <code>.env</code> file. This file should contain any sensitive information such as database credentials, and should not be committed to version control. Make sure to create a new <code>.env</code> file and set the appropriate values before running the project.</p>
 <h2>Technologies Used</h2>
 <ul>
   <li>
