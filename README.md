@@ -5,13 +5,13 @@
 </head>
 <body>
 <p style="text-align: center;">
-  <img src="https://cdn.imgbin.com/15/9/13/imgbin-web-development-computer-programming-logo-others-LgRGD7jpyhC8XK05DFgnGYVjE.jpg" width="70%">
+  <img src="https://www.zilliondesigns.com/blog/wp-content/uploads/Love-Struck-Heart-Logo-Designs.png" width="70%">
 </p>
 <h2>Installation</h2>
 <p>To install and run this project, follow these steps:</p>
 <ol>
-  <li>Clone the repository to your local machine: <code>git clone https://github.com/[username]/mern-stack-web-blog.git</code></li>
-  <li>Navigate to the project directory: <code>cd mern-stack-web-blog</code></li>
+  <li>Clone the repository to your local machine: <code>git clone https://github.com/[username]/web-blog.git</code></li>
+  <li>Navigate to the project directory: <code>cd web-blog</code></li>
   <li>Install the dependencies: <code>npm install</code></li>
   <li>Start the development server: <code>npm run dev</code></li>
 </ol>
