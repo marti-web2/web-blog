@@ -17,20 +17,6 @@
 </ol>
 <h2>Configuration</h2>
 <p>The default configuration for this project can be found in the <code>.env</code> file. This file should contain any sensitive information such as database credentials, and should not be committed to version control. Make sure to create a new <code>.env</code> file and set the appropriate values before running the project.</p>
-<h2>Future Work</h2>
-<p>There are many exciting features that will be added in the future. Some ideas for future development include:</p>
-<ul>
-  <li>Adding authentication and authorization</li>
-  <li>Improving the design and layout of the blog</li>
-  <li>Implementing a commenting system</li>
-  <li>Integrating with third-party services such as email newsletters and social media</li>
-</ul>
-<h2>Contributors</h2>
-<p>This project is being developed and maintained by the following contributors:</p>
-<ul>
-  <li>John Doe</li>
-  <li>Jane Doe</li>
-</ul>
 <h2>Technologies Used</h2>
 <ul>
   <li>
@@ -46,5 +32,18 @@
     <strong>NodeJS</strong> - Node.js is a runtime environment for JavaScript that allows developers to run JavaScript on the server side. It is built on top of the Chrome V8 JavaScript engine, and is designed to be lightweight and efficient. Node.js is commonly used for building server-side applications, and is especially popular for building real-time applications and APIs. For more information, see the <a href="https://nodejs.org/en/docs/">official documentation</a>.
   </li>
 </ul>
+<h2>Future Work</h2>
+<p>There are many exciting features that will be added in the future. Some ideas for future development include:</p>
+<ul>
+  <li>Adding authentication and authorization</li>
+  <li>Improving the design and layout of the blog</li>
+  <li>Implementing a commenting system</li>
+  <li>Integrating with third-party services such as email newsletters and social media</li>
+</ul>
+<h2>Contributors</h2>
+<p>This project is being developed and maintained by the following contributors:</p>
+<blockquote>
+<p><a href="https://www.linkedin.com/in/david-martinez-a69">Marti</a></p>
+</blockquote>
 </body>
 </html>
